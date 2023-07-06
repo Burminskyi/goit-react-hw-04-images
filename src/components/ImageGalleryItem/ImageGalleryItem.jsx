@@ -7,7 +7,7 @@ export const ImageGalleryItem = ({ picture }) => {
   const [showModal, setShowModal] = useState(false);
 
   const onModal = () => {
-    setShowModal(!showModal);
+    setShowModal(prev => !prev);
   };
 
   const { webformatURL, tags } = picture;
